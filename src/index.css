@@ -73,6 +73,7 @@ code {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   background-color: #d2dae2!important;
+  color: #0984e3!important;
 }
 /* End Navbar */
 /* Start Home */
