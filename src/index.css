@@ -5,9 +5,194 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #d2dae2;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%230621cc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%231e72f9' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%231f51e0' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%231b6afc' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%234578ee' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%232161fe' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%236f9df7' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%232b57ff' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%239dc0fc' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23384cff' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23cfe3ff' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23463eff' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* Global */
+.Home,
+.Skills,
+.About,
+.Portfolio {
+  padding: 50px;
+}
+.Home h2,
+.Skills h2,
+.About h2,
+.Portfolio h2 {
+  margin: 20px 0px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive, sans-serif ;
+  text-shadow: 0px 0px 10px #b2bec3 ;
+  color: #FFF;
+}
+.Home h2,
+.About h2,
+.Skills h2,
+.Portfolio h2 {
+  display: inline-block;
+  position: relative;
+}
+.About h2:before,
+.Skills h2:before,
+.Portfolio h2:before {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  content: '';
+  width: 30%;
+  height: 4px;
+  background-color: #0984e3 ;
+}
+/* Start Navbar */
+.navbar {
+  background-color: #0984e3;
+  padding: 0;
+}
+
+.navbar-toggler ,
+.navbar-brand {
+  margin: 10px;
+}
+.navbar-brand ,
+.navbar-light .navbar-nav .nav-link {
+  color: #FFF!important;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link {
+  padding: 20px 15px;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  background-color: #d2dae2!important;
+}
+/* End Navbar */
+/* Start Home */
+
+.myimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #0984e3;
+  margin: auto;
+  box-shadow: 0px 10px 10px #2d3436;
+}
+.myimg img {
+  width: 100%;
+  height: 100%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.links li a {
+  margin: 0px 20px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+}
+.links li:first-of-type a {
+  background-color: #4267b2;
+}
+.links li:nth-of-type(2) a {
+  background-color: #24292e;
+}
+.links li:last-of-type a {
+  background-color: #0077b5
+}
+.links li a {
+  text-decoration: none;
+  color: #FFF;
+  opacity: .9;
+}
+.links li a:hover {
+  border: 2px solid #FFF;
+  opacity: 1;
+  transition: all .4s ease-in-out;
+  animation: pop .4s infinite ease-in-out;
+  cursor: pointer;
+}
+@keyframes pop {
+  0% , 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+/* End Home */
+/* Start Skills */
+.Skills {
+  text-align: left;
+}
+.myskills {
+  display: flex;
+  justify-content: space-between;
+}
+.Skills ul {
+  margin-left: 20px;
+}
+
+.Skills ul li {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e272e;
+  position: relative;
+}
+.Skills ul li:before {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  content: '';
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #0984e3 ;
+}
+/* End Skills */
+/* Start About */
+.About {
+  text-align: left;
+}
+.About ul li {
+  font-weight: bold;
+  color: #1e272e;
+  font-size: 20px;
+}
+.About ul li span {
+  color: #0984e3;
+}
+/* End About */
+/* Start Portfolio */
+.Portfolio .myport {
+  margin-top: 40px;
+}
+.Portfolio ul li {
+  padding-bottom: 15px;
+}
+.Portfolio ul li:hover img {
+  transform: scale(1.02);
+  transition: all .5s ease-in-out;
+}
+.Portfolio ul li a img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #0984e3;
+}
+/* End Portfolio */
