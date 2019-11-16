@@ -190,12 +190,17 @@ code {
   padding-bottom: 15px;
 }
 .Portfolio ul li:hover img {
-  transform: scale(1.02);
+  transform: scale(1.2);
   transition: all .5s ease-in-out;
+}
+.Portfolio ul li a {
+  display: block;
+  border: 3px solid #0984e3;
+  overflow: hidden;
 }
 .Portfolio ul li a img {
   width: 100%;
   height: 100%;
-  border: 3px solid #0984e3;
+  
 }
 /* End Portfolio */
