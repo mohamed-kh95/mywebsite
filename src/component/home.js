@@ -12,7 +12,7 @@ class Home extends Component {
         return (
             <div className = 'Home'>
                 <div className = 'container'>
-                    <h2>Welcome To My Website</h2>
+                    <h2>Hi..! I'm Front-End Developer</h2>
                     <div className = 'myimg'>
                         <img src = {MyImg} alt = 'Profile Img' />
                     </div>
