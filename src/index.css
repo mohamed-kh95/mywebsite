@@ -188,6 +188,7 @@ code {
 }
 .Portfolio ul li {
   padding-bottom: 15px;
+  
 }
 .Portfolio ul li:hover img {
   transform: scale(1.2);
@@ -197,6 +198,7 @@ code {
   display: block;
   border: 3px solid #0984e3;
   overflow: hidden;
+  height: 220px;
 }
 .Portfolio ul li a img {
   width: 100%;
