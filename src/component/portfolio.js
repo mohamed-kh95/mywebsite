@@ -5,6 +5,8 @@ import Ajy from '../img/ajy.png';
 import Canvas from '../img/canvas.png';
 import Prog from '../img/prog.png';
 import Ipda3 from '../img/ipda3.png';
+import Blood from '../img/blood.png';
+
 class Portfolio extends Component {
     render() {
         return (
@@ -43,6 +45,11 @@ class Portfolio extends Component {
                         <li className = 'col-md-6'>
                             <a href = 'https://ipda3site.netlify.com' target = '_blank'>
                                 <img src = {Ipda3} alt = 'Ipda3'/>
+                            </a>
+                        </li>
+                        <li className = 'col-md-6 m-auto'>
+                            <a href = 'https://bloodbanksite.netlify.com' target = '_blank'>
+                                <img src = {Blood} alt = 'bloodbank'/>
                             </a>
                         </li>
                     </ul>
