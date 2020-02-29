@@ -15,6 +15,7 @@ class Skills extends Component {
                             <li>Bootstrap</li>
                             <li>Pug</li>
                             <li>Sass</li>
+                            <li>React js</li>
                         </ul>
                         <ul className = 'col-md-7 list-unstyled'>
                             <li>Accepting feedback &amp; taking constructive criticism well.</li>
